@@ -96,6 +96,10 @@ body{
     padding-left: 8px;
 }
 
+.banner .container .imgdecor{
+    margin-top: 25;
+}
+
 .bborder{
     width: 100%;
     height: 25px;
