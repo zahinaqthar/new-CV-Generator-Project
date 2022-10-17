@@ -266,6 +266,13 @@ body {
   background-color: whitesmoke;
 }
 
+.sample .container h2 {
+  font-size: 30px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 .imgsrc1 {
   width: 350px;
   margin-right: 75px;
