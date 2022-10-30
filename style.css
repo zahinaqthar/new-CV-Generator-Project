@@ -250,7 +250,7 @@ body {
 
 .button2 {
   display: inline-block;
-  padding: 0px 12px;
+  padding: 4px 12px;
   border-radius: 5px;
   background-color: #1850df;
   opacity: 30%;
@@ -308,4 +308,66 @@ body {
   text-align: center;
   color: white;
   font-size: 15px;
+}
+
+.containerabout h1{
+  font: inherit;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.containerabout p{
+  font: inherit;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.containerabout{
+  background-color: #18c7e1;
+}
+
+.containerabout h1{
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+}
+
+.containerabout p{
+  color: white;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.imgabout{
+  text-align: center;
+}
+
+.containerpertama{
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.containerpertama h2{
+  font-weight: 700;
+  font-size: 36px;
+  color: #18c7e1;
+  padding-bottom: 24px;
+}
+
+.containerpertama h3{
+  padding-top: 24px;
+  border-top: solid;
+  border-color: #18c7e1;
+  font-weight: 400;
+  font-size: 36px;
+  padding-bottom: 12px;
+}
+
+.containerpertama p{
+  font-size: 24px;
+  padding-bottom: 24px;
+  border-bottom: solid;
+  border-color: #18c7e1;
 }
