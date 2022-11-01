@@ -345,6 +345,7 @@ body {
 }
 
 .containerpertama{
+  text-align: center;
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -358,7 +359,6 @@ body {
 
 .containerpertama h3{
   padding-top: 24px;
-  border-top: solid;
   border-color: #18c7e1;
   font-weight: 400;
   font-size: 36px;
@@ -368,6 +368,5 @@ body {
 .containerpertama p{
   font-size: 24px;
   padding-bottom: 24px;
-  border-bottom: solid;
   border-color: #18c7e1;
 }
