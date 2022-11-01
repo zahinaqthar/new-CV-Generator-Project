@@ -105,6 +105,7 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
@@ -311,13 +312,11 @@ body {
 }
 
 .containerabout h1{
-  font: inherit;
   padding-top: 100px;
   text-align: center;
 }
 
 .containerabout p{
-  font: inherit;
   padding-top: 12px;
   text-align: center;
 }
@@ -369,4 +368,55 @@ body {
   font-size: 24px;
   padding-bottom: 24px;
   border-color: #18c7e1;
+}
+
+.contactuspertama{
+  padding: 100px;
+  padding-bottom: 48px;
+  text-align: center;
+  background-color: white;
+}
+
+.inputcontactpertama{
+  background-color: white;
+  padding: 60px;
+  padding-top: 0px;
+}
+
+.buttoncontact{
+  background-color:#18c7e1;
+  width: 100%;
+  border-color: #18c7e1;
+  border-radius: 60px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.buttoncontact:hover{
+  background-color: white;
+  color:#18c7e1;
+  border-color: #18c7e1;
+  width: 100%;
+  border-radius: 60px;
+}
+
+.buttoncontactpertama{
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 200px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.contactuspertama h3{
+  font-weight: 600;
+  color: #18c7e1;
+  font-size: 36px;
+}
+
+.contactuspertama p{
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
