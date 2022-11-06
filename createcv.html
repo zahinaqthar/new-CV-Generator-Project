@@ -104,84 +104,107 @@
                 <div class="row">
                   <h4>Work Experience</h4>
                 </div>
-                <form>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="wejobttl" class="form-label">Job title</label>
-                        <input type="text" class="form-control" id="wejobttl" />
+
+                <div class="sets" id="sets">
+                  <div class="set">
+                    <form>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="wejobttl" class="form-label">Job title</label>
+                            <input type="text" class="form-control" id="wejobttl" />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="m-auto">
+                            <label for="wecname" class="form-label">Company name</label>
+                            <input type="text" class="form-control" id="wecname" />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="m-auto">
-                        <label for="wecname" class="form-label">Company name</label>
-                        <input type="text" class="form-control" id="wecname" />
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="wesd" class="form-label">Start date</label>
+                            <input type="text" class="form-control" id="wesd" />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="m-auto">
+                            <label for="weed" class="form-label">End date</label>
+                            <input type="text" class="form-control" id="weed" />
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <label for="wetarea" class="form-label">Other information</label>
+                      <textarea class="form-control" id="wetarea" rows="5"></textarea>
+                    </form>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="wesd" class="form-label">Start date</label>
-                        <input type="email" class="form-control" id="wesd" />
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="m-auto">
-                        <label for="weed" class="form-label">End date</label>
-                        <input type="text" class="form-control" id="weed" />
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                  <button class="my-3 bg-light text-dark" style="border: none; border-radius: 10px" id="abtn" onclick="addnewfield()">add entry</button>
+                  <button class="my-3 bg-light text-dark" style="border: none; border-radius: 10px" id="abtn" onclick="removeField()">remove</button>
+                </div>
               </div>
 
               <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
                 <h4>Qualifications</h4>
+                <label for="qtarea" class="form-label">Qualifications</label>
+                <textarea class="form-control" id="qtarea" rows="8"></textarea>
               </div>
               <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
                 <div class="row">
                   <h4>Education</h4>
                 </div>
-                <form>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="ecname" class="form-label">Course name</label>
-                        <input type="email" class="form-control" id="ecname" />
+
+                <div class="sets2">
+                  <div class="set">
+                    <form>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="ecname" class="form-label">Course name</label>
+                            <input type="text" class="form-control" id="ecname" />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="m-auto">
+                            <label for="einame" class="form-label">Institution name</label>
+                            <input type="text" class="form-control" id="einame" />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="m-auto">
-                        <label for="einame" class="form-label">Institution name</label>
-                        <input type="text" class="form-control" id="einame" />
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="esd" class="form-label">Start date</label>
+                            <input type="text" class="form-control" id="esd" />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="m-auto">
+                            <label for="eed" class="form-label">End date</label>
+                            <input type="text" class="form-control" id="eed" />
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <label for="etarea" class="form-label">Other information</label>
+                      <textarea class="form-control" id="etarea" rows="5"></textarea>
+                    </form>
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="mb-3">
-                        <label for="esd" class="form-label">Start date</label>
-                        <input type="email" class="form-control" id="esd" />
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="m-auto">
-                        <label for="eed" class="form-label">End date</label>
-                        <input type="text" class="form-control" id="eed" />
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                  <button class="my-3 bg-light text-dark" style="border: none; border-radius: 10px" id="bbtn" onclick="addnewedfield()">add entry</button>
+                  <button class="my-3 bg-light text-dark" style="border: none; border-radius: 10px" id="abtn" onclick="removeeField()">remove</button>
+                </div>
               </div>
               <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
                 <h4>Interest</h4>
+                <label for="itarea" class="form-label">Interest</label>
+                <textarea class="form-control" id="itarea" rows="8"></textarea>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
