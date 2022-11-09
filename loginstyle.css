@@ -164,15 +164,15 @@ body {
     height: 32px;
     background-color: #2f2f2f;
     padding: 10px;
-  }
+}
   
-  .footer .container p {
+.footer .container p {
     text-align: center;
     color: white;
     font-size: 15px;
-  }
+}
 
-.buttonregist{
+.buttonlogin{
     color: white;
     background-color: #2f2f2f;
     border: 1px solid #2f2f2f;
@@ -181,7 +181,7 @@ body {
     padding: 12px;
 }
 
-.buttonregist:hover{
+.buttonlogin:hover{
     background-color: lightseagreen;
     border: 1px solid lightseagreen;
 }
