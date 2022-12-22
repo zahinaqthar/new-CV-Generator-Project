@@ -23,7 +23,7 @@
           <a href="<?= base_url('User/view_cv/' . $id_user->id) ?>"><button class="ms-3 bg-dark text-light" style="flex: 1; border: none; border-radius: 10px">quick preview</button></a>
         <?php } ?>
         <button class="ms-3 bg-dark text-light" style="flex: 1; border: none; border-radius: 10px" onclick="submitForm()">save</button>
-        <button class="ms-3 bg-dark text-light" style="flex: 1; border: none; border-radius: 10px">download</button>
+        <button class="ms-3 bg-dark text-light" style="flex: 1; border: none; border-radius: 10px" id="btn-download">download</button>
       </div>
     </div>
   </div>
@@ -217,6 +217,24 @@
       document.getElementById("f2").submit();
       document.getElementById("f3").submit();
     }
+
+    const btnDownload = document.getElementById('btn-download');
+    btnDownload.addEventListener('click', function() {
+      var printWindow = window.open('<?= base_url('User/view_cv/' . $id_user->id) ?>', 'Print', 'left=200, top=200, width=950, height=500, toolbar=0, resizable=0');
+      console.log('windo')
+
+      printWindow.addEventListener('load', function() {
+        if (Boolean(printWindow.chrome)) {
+          printWindow.print();
+          setTimeout(function() {
+            printWindow.close();
+          }, 500);
+        } else {
+          printWindow.print();
+          printWindow.close();
+        }
+      }, true);
+    })
   </script>
   <script src="<?= base_url('assets/js/') ?>script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

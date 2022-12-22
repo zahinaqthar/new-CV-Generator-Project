@@ -1,5 +1,5 @@
 <?php
-class About extends CI_Controller
+class Term extends CI_Controller
 {
     public function __construct()
     {
@@ -15,8 +15,8 @@ class About extends CI_Controller
     public function index()
     {
         $data = array(
-            'title' => 'Aboutpage',
-            'content' => 'About',
+            'title' => 'Termpage',
+            'content' => 'Term',
 
         );
         $this->load->view('templates/wrapper', $data);

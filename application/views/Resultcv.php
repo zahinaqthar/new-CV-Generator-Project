@@ -12,22 +12,22 @@
   <title><?= $title ?></title>
 </head>
 
-<body class="bg-light text-dark">
+<body class="bg-light text-dark" id="result">
   <div class="container mt-5">
     <?php foreach ($basic as $isi) { ?>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="text-center">
             <img class="img-thumbnail" src="<?= base_url('uploads/photo/' . $isi->photo) ?>" alt="profile picture" style="width: 400px; height: 400px" ; />
           </div>
           <h3 class="pt-4" style="text-align: center"><?= $isi->fname  ?></h3>
           <h4 class="text-center pt-3"><?= $isi->email  ?></h4>
           <div class="row text-center pt-5">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h5>Phone Number</h5>
               <p><?= $isi->phonenum  ?></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h5>Websites</h5>
               <p><?= $isi->website  ?></p>
             </div>
@@ -52,15 +52,15 @@
       <!-- end of basic -->
       <!-- start of work ex -->
       <?php foreach ($works as $work) { ?>
-        <div class="col-md-8">
+        <div class="col-lg-8">
           <h3>Work Experience</h3>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h5>Company Name</h5>
               <h4><?= $work->compname ?></h4>
               <p><?= $work->jobtit; ?></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h5>Stard Date - End Date</h5>
               <h4><?= $work->startw . ' - ' . $work->endw; ?></h4>
             </div>
@@ -78,12 +78,12 @@
         <h3>Education</h3>
         <?php foreach ($edus as $edu) { ?>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h5>Course Name</h5>
               <h5><?= $edu->cname; ?></h5>
               <p><?= $edu->iname; ?></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h5>Stard Date - End Date</h5>
               <h4><?= $edu->start . '-' . $edu->end; ?></h4>
             </div>
@@ -119,7 +119,7 @@
       <!-- end for rest of basic -->
   </div>
   <script>
-    window.print();
+    // window.print()
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
